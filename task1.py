@@ -12,11 +12,17 @@ def rand_list_coins(n):
 
 
 def count_flipped_coins(list):
-    count = 0
+    count0 = 0
+    count1 = 0
     for i in range(len(list)):
         if list[i] == 0:
-            count += 1
-    return count
+            count0 += 1
+        else:
+            count1 += 1
+    if count0 <= count1:
+        return count0
+    else:
+        return count1
 
 
 try:
