@@ -14,9 +14,10 @@ def rand_list_students(n):
 def place_in_line(list, growth):
     if list[-1] >= growth:
         return len(list)+1
-    for i in range(len(list)):
-        if list[i] <= growth:
-            return i+1
+    else:
+        for i in range(len(list)):
+            if list[i] <= growth:
+                return i+1
 
 
 try:
